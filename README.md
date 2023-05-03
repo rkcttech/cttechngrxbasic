@@ -47,3 +47,5 @@ For Ngrx
     }
     export const userReducer = createReducer
 
+7 Prime NG
+npm install primeng --force

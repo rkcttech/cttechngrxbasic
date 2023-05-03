@@ -1,7 +1,18 @@
-<p>patient works!</p>
+<p>Welcome to NGRX by CitiusTech!</p>
 
-<p>{{ loggedInUser$ | async | json}}</p>
 
 <button (click)="registerUser()">Register</button>
+<br/>
 <button (click)="signInUser()">Login</button>
+<br/>
 <button (click)="logoutUser()">Logout</button>
+<br/>
+
+<button (click)="addOrg()">Add Org</button>
+<br/>
+<button (click)="signInUser()">Remove Org</button>
+<br/>
+<button (click)="logoutUser()">Update Org</button>
+<br/>
+
+<p>{{ loggedInUser$ | async | json}}</p>

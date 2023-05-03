@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { PatientComponent } from './patient/patient.component';
 import { StoreModule } from '@ngrx/store';
 import { patientReducer } from './store/patient.reducer';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ButtonModule } from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { patientReducer } from './store/patient.reducer';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
+    ButtonModule,
     StoreModule.forRoot({ loggedInUser: patientReducer  })    
   ],
   providers: [],
